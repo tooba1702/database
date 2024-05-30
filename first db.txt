@@ -1,0 +1,8 @@
+/*CREATE TABLE students(
+stdId int PRIMARY KEY AUTO_INCREMENT,
+stdName varchar(20),
+stdEamil varchar(50) UNIQUE,
+stdAge int 
+)*/
+-- ALTER TABLE students ADD stdcity varchar(20)
+-- ALTER TABLE students DROP stdAge
