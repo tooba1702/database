@@ -1,0 +1,29 @@
+id int PRIMARY KEY AUTO_INCREMENT,
+name varchar (20),
+gender varchar (7),
+address varchar (25),
+salary int,
+designation varchar (20) )*/
+-- ALTER TABLE employees DROP gender
+-- ALTER TABLE employees ADD gender ENUM('male','female')
+ALTER TABLE employees ADD age int
+
+
+
+
+
+
+
+
+
+-- SELECT * FROM `employees` WHERE age IN (20,22)
+-- SELECT * FROM `employees` WHERE age IN (20,22)
+-- SELECT * FROM employees WHERE age>=20 AND age<=25
+-- SELECT * FROM employees WHERE age>=20 OR age<=25
+-- SELECT * FROM employees where age BETWEEN 18 AND 22
+-- SELECT * FROM `employees` WHERE age NOT IN (20,22)
+SELECT * FROM employees WHERE NOT address ='karachi'
+
+
+
+ALTER TABLE employees ADD dept_id int , ADD CONSTRAINT FOREIGN KEY (dept_id) REFERENCES departments(id)

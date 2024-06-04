@@ -1,0 +1,6 @@
+-- ALTER TABLE students CHANGE stdName studentName INT
+-- ALTER TABLE students ADD stdgender varchar (15), ADD stdcontact int 
+-- ALTER TABLE students CHANGE studentName studentName varchar(20) 
+-- INSERT INTO students (studentName,stdEamil,stdcity,stdgender,stdcontact) VALUES ('ali','ali@gmail.com','karachi','male',037778992),('noor','noor@gmail.com','karachi','female',0377789882)
+-- SELECT stdId FROM students
+UPDATE students SET studentName = 'alikhan', stdEamil = 'ali12@gmail.com' WHERE stdId = 1
