@@ -1,0 +1,26 @@
+Q1
+SELECT * FROM artists WHERE city='faislabad'
+Q2
+-- SELECT * FROM songs WHERE release_year BETWEEN 2010 AND 2024
+Q4
+/*select  artists.id,artists.name ,songs.song_name,songs.release_year
+from songs_artist
+INNER JOIN
+songs
+ON songs_artist.song_id=songs.id
+INNER JOIN
+artists
+on songs_artist.art_id=artists.id
+WHERE artists.name='atif aslam'
+ORDER BY songs.release_year ASC*/
+Q3
+SELECT artists.id, artists.name,songs.song_name
+FROM songs_artist
+INNER JOIN
+songs
+on songs_artist.song_id=songs.id
+INNER JOIN
+
+artists
+ON songs_artist.art_id=artists.id
+ORDER BY songs.id ASC
