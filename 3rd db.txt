@@ -15,7 +15,6 @@ ALTER TABLE employees ADD age int
 
 
 
-
 -- SELECT * FROM `employees` WHERE age IN (20,22)
 -- SELECT * FROM `employees` WHERE age IN (20,22)
 -- SELECT * FROM employees WHERE age>=20 AND age<=25
@@ -24,6 +23,3 @@ ALTER TABLE employees ADD age int
 -- SELECT * FROM `employees` WHERE age NOT IN (20,22)
 SELECT * FROM employees WHERE NOT address ='karachi'
 
-
-
-ALTER TABLE employees ADD dept_id int , ADD CONSTRAINT FOREIGN KEY (dept_id) REFERENCES departments(id)
